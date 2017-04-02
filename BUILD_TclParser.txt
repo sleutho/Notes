@@ -1,19 +1,21 @@
 Add the following line to Cygwin.bat
-> "call "C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\vcvarsall.bat" x86_amd64"
-or
-> call "c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\vcvarsall.bat" amd64
+    VS2015
+        > "call "C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\vcvarsall.bat" x86_amd64"
+    or VS2010
+        > call "c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\vcvarsall.bat" amd64
 
 Make sure you have no \r in your file endings (CRLF)
+    - Manually change endings
 
 Change TCL_SRC_DIR in tclConfig.sh to point to
-> TCL_SRC_DIR='C:\Dev\Tcl\tcl8.5.19'
-not ".."
+    > TCL_SRC_DIR='C:\Dev\Tcl\tcl8.5.19'
+    instead of ".."
 
 Run configure
-> ./configure --enable-64bit --with-tcl=/cygdrive/c/Dev/Tcl/tcl8.5.19/win/Release_AMD64_VC10
+> ./configure --enable-64bit --with-tcl=/cygdrive/c/Dev/Tcl/tcl8.5.19/win/Release_AMD64_VC13
 
 Make sure to move the VC linker in front of the cygwin link via
-> export PATH="/cygdrive/c/Program Files (x86)/Microsoft Visual Studio 10.0/VC/BIN/amd64":$PATH
+> export PATH="/cygdrive/c/Program Files (x86)/Microsoft Visual Studio 14.0/VC/BIN/amd64":$PATH
 
 Make install fails
 > ...

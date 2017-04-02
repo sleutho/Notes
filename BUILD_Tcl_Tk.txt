@@ -1,7 +1,22 @@
 Build on windows:
 
-nmake -f makefile.vc INSTALLDIR=c:\Tcl_8_5_19
-nmake -f makefile.vc install INSTALLDIR=c:\Tcl_8_5_19
+    VS Build console
+        nmake -f makefile.vc INSTALLDIR=c:\Tcl_8_5_19
+        nmake -f makefile.vc INSTALLDIR=c:\Tcl_8_5_19 install
 
-nmake -f makefile.vc TCLDIR=C:\Dev\Tcl\tcl8.5.19 INSTALLDIR=C:\Tcl_8_5_19
-nmake -f makefile.vc install TCLDIR=C:\Dev\Tcl\tcl8.5.19 INSTALLDIR=C:\Tcl_8_5_19
+        nmake -f makefile.vc TCLDIR=C:\Dev\Tcl\tcl8.5.19 INSTALLDIR=C:\Tcl_8_5_19
+        nmake -f makefile.vc TCLDIR=C:\Dev\Tcl\tcl8.5.19 INSTALLDIR=C:\Tcl_8_5_19 install
+
+        
+        nmake -f makefile.vc INSTALLDIR=c:\Tcl_8_6_6
+        nmake -f makefile.vc INSTALLDIR=c:\Tcl_8_6_6 install
+
+        nmake -f makefile.vc TCLDIR=C:\Dev\Tcl\tcl8.6.6 INSTALLDIR=C:\Tcl_8_6_6
+        nmake -f makefile.vc TCLDIR=C:\Dev\Tcl\tcl8.6.6 INSTALLDIR=C:\Tcl_8_6_6 install
+
+    Cygwin console
+        nmake -f makefile.vc INSTALLDIR=/Tcl_8_5_19
+        nmake -f makefile.vc install INSTALLDIR=/Tcl_8_5_19
+
+        nmake -f makefile.vc TCLDIR=/Dev/Tcl/tcl8.5.19 INSTALLDIR=/Tcl_8_5_19
+        nmake -f makefile.vc install TCLDIR=/Dev/Tcl/tcl8.5.19 INSTALLDIR=/Tcl_8_5_19
