@@ -1,3 +1,5 @@
+Build on windows:
+
 nmake -f makefile.vc INSTALLDIR=c:\Tcl_8_5_19
 nmake -f makefile.vc install INSTALLDIR=c:\Tcl_8_5_19
 
