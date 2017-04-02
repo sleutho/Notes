@@ -1,0 +1,5 @@
+nmake -f makefile.vc INSTALLDIR=c:\Tcl_8_5_19
+nmake -f makefile.vc install INSTALLDIR=c:\Tcl_8_5_19
+
+nmake -f makefile.vc TCLDIR=C:\Dev\Tcl\tcl8.5.19 INSTALLDIR=C:\Tcl_8_5_19
+nmake -f makefile.vc install TCLDIR=C:\Dev\Tcl\tcl8.5.19 INSTALLDIR=C:\Tcl_8_5_19

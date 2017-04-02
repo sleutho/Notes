@@ -1,0 +1,12 @@
+Add the following line to Cygwin.bat
+"call "C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\vcvarsall.bat" x86_amd64"
+
+Make sure you have no \r in your file endings (CRLF)
+
+Make sure tclConfig.sh has uptoate path name
+> TCL_SRC_DIR='C:\Dev\Tcl\tcl8.5.19'
+> TCL_PREFIX='c:\Tcl_8_5_19'
+> etc
+
+Run configure
+> ./configure --enable-64bit --with-tcl=/cygdrive/c/Dev/Tcl/tcl8.5.19/win/Release_AMD64_VC13
